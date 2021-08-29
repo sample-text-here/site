@@ -1,0 +1,19 @@
+{{> top }}
+		<h1>{{title}}</h1>
+		{{#if error}}
+			<span class="error">{{error}}</span>
+			<br /><br />
+		{{/if}}
+		<form method="POST" action="/signup">
+			<label for="username">username</label><br />
+			<input required name="username" type="text" /><br />
+			<br />
+			<label for="username">password</label><br />
+			<input required name="password" type="password" /><br />
+			<br />
+			<label for="username">confirm password</label><br />
+			<input required name="pconfirm" type="password" /><br />
+			<br />
+			<input type="submit" />
+		</form>
+{{> bottom }}

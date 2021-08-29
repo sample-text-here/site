@@ -1,0 +1,8 @@
+body {
+	padding: 1em 2em;
+	font-family: monospace;
+}
+
+input { margin-top: 2px }
+
+.error { color: red }

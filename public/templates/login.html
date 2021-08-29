@@ -1,0 +1,16 @@
+{{> top }}
+		<h1>{{title}}</h1>
+		{{#if error}}
+			<span class="error">{{error}}</span>
+			<br /><br />
+		{{/if}}
+		<form method="POST" action="/login">
+			<label required for="username">username</label><br />
+			<input name="username" type="text" /><br />
+			<br />
+			<label required for="username">password</label><br />
+			<input name="password" type="password" /><br />
+			<br />
+			<input type="submit" />
+		</form>
+{{> bottom }}
